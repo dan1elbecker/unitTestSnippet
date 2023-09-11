@@ -1,19 +1,25 @@
 package zdh.thm.de;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Erstellen einer MathService-Implementierung (z.B. MathServiceImpl)
+        MathService mathService = new MathServiceImpl();
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // Erstellen eines Calculator-Objekts mit der MathService-Implementierung
+        Calculator calculator = new Calculator(mathService);
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
-        }
+        // Verwenden Sie den Calculator, um mathematische Operationen durchzuführen
+        int resultAdd = calculator.add(5, 3);
+        int resultSubtract = calculator.subtract(10, 4);
+        int resultMultiply = calculator.multiply(6, 2);
+        int resultDivide = calculator.divide(8, 2);
+        int resultSquare = calculator.square(5);
+
+        // Ausgabe der Ergebnisse
+        System.out.println("Addition: " + resultAdd);
+        System.out.println("Subtraktion: " + resultSubtract);
+        System.out.println("Multiplikation: " + resultMultiply);
+        System.out.println("Division: " + resultDivide);
+        System.out.println("Quadrat: " + resultSquare);
     }
 }
