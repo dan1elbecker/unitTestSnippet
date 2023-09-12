@@ -36,9 +36,11 @@ public class CalculatorTest {
         // Festlegen von Mock-Ergebnissen für mathService.add
         when(mathService.add(2, 3)).thenReturn(5);
         when(mathService.add(5, -6)).thenReturn(-1);
+        when(mathService.add(6, 0)).thenReturn(6);
 
         // Überprüfung der add-Methode des Calculators
         assertEquals(5, calculator.add(2, 3));
         assertEquals(-1, calculator.add(5, -6));
+        assertEquals(6, calculator.add(6, 0));
     }
 }
