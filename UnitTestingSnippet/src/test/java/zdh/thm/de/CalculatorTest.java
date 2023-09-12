@@ -43,4 +43,19 @@ public class CalculatorTest {
         assertEquals(-1, calculator.add(5, -6));
         assertEquals(6, calculator.add(6, 0));
     }
+
+    @Test
+    public void testSubtract() {
+
+    }
+
+    @Test
+    public void testMultiply() {
+
+    }
+
+    @Test
+    public void testDivide() {
+
+    }
 }
