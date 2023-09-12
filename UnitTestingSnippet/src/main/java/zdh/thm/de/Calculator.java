@@ -11,18 +11,17 @@ public class Calculator {
 
     /**
      * Konstruktor
-     * @param mathService
+     * @param mathService Ein MathService-Objekt, das für mathematische Operationen verwendet wird.
      */
-
     public Calculator(MathService mathService) {
         this.mathService = mathService;
     }
 
     /**
      * Addiert zwei Zahlen
-     * @param a
-     * @param b
-     * @return
+     * @param a Die erste Zahl
+     * @param b Die zweite Zahl
+     * @return Die Summe der beiden Zahlen
      */
     public int add(int a, int b) {
         return mathService.add(a, b);
@@ -30,9 +29,9 @@ public class Calculator {
 
     /**
      * Subtrahiert zwei Zahlen
-     * @param a
-     * @param b
-     * @return
+     * @param a Die erste Zahl
+     * @param b Die zweite Zahl
+     * @return Die Differenz der beiden Zahlen
      */
     public int subtract(int a, int b) {
         return mathService.subtract(a, b);
@@ -40,9 +39,9 @@ public class Calculator {
 
     /**
      * Multipliziert zwei Zahlen
-     * @param a
-     * @param b
-     * @return
+     * @param a Die erste Zahl
+     * @param b Die zweite Zahl
+     * @return Das Produkt der beiden Zahlen
      */
     public int multiply(int a, int b) {
         return mathService.multiply(a, b);
@@ -50,9 +49,9 @@ public class Calculator {
 
     /**
      * Dividiert zwei Zahlen
-     * @param a
-     * @param b
-     * @return
+     * @param a Die Dividendenzahl (Zahl, die geteilt wird)
+     * @param b Der Divisor (Zahl, durch die geteilt wird)
+     * @return Das Ergebnis der Division
      */
     public int divide(int a, int b) {
         return mathService.divide(a, b);
@@ -60,8 +59,8 @@ public class Calculator {
 
     /**
      * Quadriert eine Zahl
-     * @param a
-     * @return
+     * @param a Die Zahl, die quadriert werden soll
+     * @return Das Quadrat der gegebenen Zahl
      */
     public int square(int a) {
         return mathService.square(a);

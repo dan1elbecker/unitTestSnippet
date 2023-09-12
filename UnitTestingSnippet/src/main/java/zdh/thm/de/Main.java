@@ -1,5 +1,10 @@
 package zdh.thm.de;
 
+/**
+ * Hauptklasse für die Ausführung von mathematischen Operationen mit dem Calculator-Objekt.
+ * @version 1.0
+ * @author Daniel Becker
+ */
 public class Main {
     public static void main(String[] args) {
         // Erstellen einer MathService-Implementierung (z.B. MathServiceImpl)
